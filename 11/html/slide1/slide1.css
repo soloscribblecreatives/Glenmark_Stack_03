@@ -1,0 +1,157 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+.background {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	z-index: 1;
+}
+
+.s2 {
+  position: absolute;
+  left: 83px;
+  top: 118px;
+  width: 409px;
+  height: 176px;
+  animation: stampIn 0.4s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+  z-index: 2;
+}
+
+.s3 {
+  position: absolute;
+  left: 520px;
+  top: 119px;
+  width: 408px;
+  height: 170px;
+  animation: stampIn 0.4s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+  z-index: 3;
+}
+
+.s4 {
+  position: absolute;
+  left: 250px;
+  top: 296px;
+  width: 524px;
+  height: 53px;
+  animation: fadeInUp 1s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+  z-index: 4;
+}
+
+.s5 {
+  position: absolute;
+  left: 47px;
+  top: 390px;
+  width: 441px;
+  height: 213px;
+  animation: zoomInUp 1s;
+  animation-delay: 2.5s;
+  animation-fill-mode: both;
+  z-index: 4;
+}
+
+.s6 {
+  position: absolute;
+  left: 536px;
+  top: 394px;
+  width: 439px;
+  height: 209px;
+  animation: zoomInUp 1s;
+  animation-delay: 3.5s;
+  animation-fill-mode: both;
+  z-index: 4;
+}
+
+.pop_up {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	display: none;
+	z-index: 8;
+}
+
+.pop1 {
+	position: absolute;
+	right: 90px;
+	bottom: 0px;
+	width: 90px;
+	height: 200px;
+	z-index: 10;
+}
+
+.c1ose1 {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	display: none;
+	z-index: 12;
+}
+
+.pop_up2 {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	display: none;
+	z-index: 8;
+}
+
+.pop2 {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	width: 90px;
+	height: 200px;
+	z-index: 10;
+}
+
+.c1ose2 {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	display: none;
+	z-index: 12;
+}
+
+
+@-webkit-keyframes stampIn {
+	0% {
+		opacity: 0;
+	}
+	10% {
+		transform-origin: 50% 50%;
+		transform: scale(3);
+		opacity: 0.5;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+@keyframes stampIn {
+	0% {
+		opacity: 0;
+	}
+	10% {
+		transform-origin: 50% 50%;
+		transform: scale(3);
+		opacity: 0.5;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+.stampIn {
+  -webkit-animation-name: stampIn;
+  animation-name: stampIn;
+}

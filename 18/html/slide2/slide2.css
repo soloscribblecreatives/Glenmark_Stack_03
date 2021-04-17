@@ -1,0 +1,85 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+.background {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	z-index: 1;
+}
+
+.s2 {
+  position: absolute;
+  left: 185px;
+  top: 91px;
+  width: 644px;
+  height: 240px;
+  animation: fadeInUp 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+  z-index: 2;
+}
+
+.s3 {
+  position: absolute;
+  left: 104px;
+  top: 357px;
+  width: 410px;
+  height: 270px;
+  animation: fadeInLeft 1s;
+  animation-delay: 1.5s;
+  animation-fill-mode: both;
+  z-index: 2;
+}
+
+.s4 {
+  position: absolute;
+  left: 595px;
+  top: 361px;
+  width: 328px;
+  height: 142px;
+  animation: fadeInRight 1s;
+  animation-delay: 1.5s;
+  animation-fill-mode: both;
+  z-index: 3;
+}
+
+.s5 {
+  position: absolute;
+  left: 491px;
+  top: 444px;
+  width: 95px;
+  height: 159px;
+   animation: rollIn 0.8s;
+  animation-delay: 2.5s;
+  animation-fill-mode: both;
+  z-index: 4;
+}
+
+
+.pop_up {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	display: none;
+	z-index: 6;
+}
+
+.pop1 {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	width: 130px;
+	height: 180px;
+	z-index: 8;
+}
+
+.c1ose1 {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	display: none;
+	z-index: 10;
+}
