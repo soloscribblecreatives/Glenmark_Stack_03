@@ -90,7 +90,7 @@
   z-index: 3;
 }
 
-.pop_up2 {
+.pop_up {
 	position: absolute;
 	width: 1024px;
 	height: 768px;
@@ -98,23 +98,21 @@
 	z-index: 8;
 }
 
-.pop2 {
+.pop1 {
 	position: absolute;
 	right: 0px;
 	bottom: 0px;
-	width: 150px;
+	width: 180px;
 	height: 150px;
-	border: 2px solid red;
-	z-index: 6;
+	z-index: 10;
 }
 
-.c1ose2 {
+.c1ose1 {
 	position: absolute;
 	width: 1024px;
 	height: 768px;
 	display: none;
-	border: 5px solid green;
-	z-index: 10;
+	z-index: 12;
 }
 
 
