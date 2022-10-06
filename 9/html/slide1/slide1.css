@@ -10,99 +10,27 @@
 	z-index: 1;
 }
 
-.s2 {
+.popup {
   position: absolute;
-  left: 119px;
-  top: 97px;
-  width: 785px;
-  height: 216px;
-  animation: fadeInUp 1s;
-  animation-delay: 0.5s;
-  animation-fill-mode: both;
-  z-index: 2;
+  width: 1024px;
+  height: 768px;
+  display: none;
+  z-index: 15;
 }
 
-.s3 {
-  position: absolute;
-  left: 79px;
-  top: 323px;
-  width: 876px;
-  height: 333px;
-  animation: fadeInRight 1s;
-  animation-delay: 1.5s;
-  animation-fill-mode: both;
-  z-index: 3;
-}
-
-.s4 {
-  position: absolute;
-  left: 536px;
-  top: 358px;
-  width: 430px;
-  height: 279px;
-  animation: fadeInRight 1s;
-  animation-delay: 1.5s;
-  animation-fill-mode: both;
-  z-index: 4;
-}
-
-.pop_up {
+.pop_open {
 	position: absolute;
-	width: 1024px;
-	height: 768px;
-	display: none;
-	z-index: 8;
-}
-
-.pop1 {
-	position: absolute;
-	right: 0px;
-	bottom: 0px;
-	width: 150px;
-	height: 150px;
-	z-index: 6;
-}
-
-.c1ose1 {
-	position: absolute;
-	width: 1024px;
-	height: 768px;
-	display: none;
+  left: 919px;
+  top: 649px;
+  width: 103px;
+  height: 63px;
 	z-index: 10;
 }
 
-
-@-webkit-keyframes stampIn {
-	0% {
-		opacity: 0;
-	}
-	10% {
-		transform-origin: 50% 50%;
-		transform: scale(3);
-		opacity: 0.5;
-	}
-	100% {
-		transform: scale(1);
-		opacity: 1;
-	}
-}
-
-@keyframes stampIn {
-	0% {
-		opacity: 0;
-	}
-	10% {
-		transform-origin: 50% 50%;
-		transform: scale(3);
-		opacity: 0.5;
-	}
-	100% {
-		transform: scale(1);
-		opacity: 1;
-	}
-}
-
-.stampIn {
-  -webkit-animation-name: stampIn;
-  animation-name: stampIn;
+.pop_close {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	display: none;
+	z-index: 20;
 }
