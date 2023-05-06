@@ -7,30 +7,4 @@
 	position: absolute;
 	width: 1024px;
 	height: 768px;
-	z-index: 1;
-}
-
-.popup {
-  position: absolute;
-  width: 1024px;
-  height: 768px;
-  display: none;
-  z-index: 15;
-}
-
-.pop_open {
-	position: absolute;
-  left: 919px;
-  top: 649px;
-  width: 103px;
-  height: 63px;
-	z-index: 10;
-}
-
-.pop_close {
-	position: absolute;
-	width: 1024px;
-	height: 768px;
-	display: none;
-	z-index: 20;
 }
