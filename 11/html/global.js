@@ -537,32 +537,18 @@ $(document).ready(function(){
 	})
 })
 
+
+
 /*--------------------- animation javascript -----------------------*/
 
-function s1_pop1() {
-	$('.s1_2').css("display","block");
-	$('.s1_c1ose1').css("display","block");
+function s5_pop1() {
+	$('.s5_5').css("display","block");
+	$('.s5_c1ose1').css("display","block");
+	$('.s5_pop1').css("display","none");
 }
 
-function s1_pop2() {
-	$('.s1_3').css("display","block");
-	$('.s1_c1ose1').css("display","block");
-}
-
-function s1_pop3() {
-	$('.s1_4').css("display","block");
-	$('.s1_c1ose1').css("display","block");
-}
-
-function s1_pop4() {
-	$('.s1_5').css("display","block");
-	$('.s1_c1ose1').css("display","block");
-}
-
-function s1_close1() {
-	$('.s1_2').css("display","none");
-	$('.s1_3').css("display","none");
-	$('.s1_4').css("display","none");
-	$('.s1_5').css("display","none");
-	$('.s1_c1ose1').css("display","none");
+function s5_close1() {
+	$('.s5_5').css("display","none");
+	$('.s5_c1ose1').css("display","none");
+	$('.s5_pop1').css("display","block");
 }

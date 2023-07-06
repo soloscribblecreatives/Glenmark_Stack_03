@@ -385,16 +385,16 @@ currentSlide();
 var selectedContentPath='';
 switch(pg_id){
 	case 1:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide1/1.jpg" width="1024" height="768" alt=""></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="s1_1"><img src="slide1/s1_1.png"/></div>';
 	break;
 	case 2:
-	content='<link rel="stylesheet" type="text/css" href="slide2/slide2.css" media="screen"/><div class="background"><img src="slide2/1.jpg" width="1024" height="768" alt=""></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide2/slide2.css" media="screen"/><div class="s2_1"><img src="slide2/s2_1.png"/></div>';
 	break;
-    case 3:
-	content='<link rel="stylesheet" type="text/css" href="slide3/slide3.css" media="screen"/><div class="background"><img src="slide3/1.jpg" width="1024" height="768" alt=""></div>';
+	case 3:
+	content='<link rel="stylesheet" type="text/css" href="slide3/slide3.css" media="screen"/><div class="s3_1"><img src="slide3/s3_1.png"/></div><div class="s3_2"><img src="slide3/s3_2.png"/></div><div class="s3_3"><img src="slide3/s3_3.gif"/></div>';
 	break;
     case 4:
-	content='<link rel="stylesheet" type="text/css" href="slide4/slide4.css" media="screen"/><div class="background"><img src="slide4/1.jpg" width="1024" height="768" alt=""></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide4/slide4.css" media="screen"/><div class="s4_1"><img src="slide4/s4_1.png"/></div><div class="s4_2"><img src="slide4/s4_2.png"/></div><div class="s4_3"><img src="slide4/s4_3.png"/></div><div class="s4_4"><img src="slide4/s4_4.png"/></div><div class="s4_5"><img src="slide4/s4_5.png"/></div><div class="s4_6"><img src="slide4/s4_6.png"/></div><div class="s4_7"><img src="slide4/s4_7.png"/></div><div class="s4_8"><img src="slide4/s4_8.png"/></div><div class="s4_9"><img src="slide4/s4_9.png"/></div><div class="kol" onclick="kol();"></div><video id="myVideo" width="1024" height="768" src="slide4/s4_12.mp4" controls></video><div class="closekol" onclick="closekol();"><img src="slide4/s4_13.png"></div>';
 	break;
 }
 
@@ -475,7 +475,7 @@ function open_page(url,page_id){
 	function checkBtns(refNum){
 		switch(refNum){
 			case 1:
-			open_page('',1);
+			open_page('',3);
             break;
 		}
 	}
@@ -539,30 +539,50 @@ $(document).ready(function(){
 
 /*--------------------- animation javascript -----------------------*/
 
-function s1_pop1() {
-	$('.s1_2').css("display","block");
-	$('.s1_c1ose1').css("display","block");
+function pop1() {
+	$('.api').css("display","block");
+	$('.c1ose1').css("display","block");
+	$('.pop1').css("display","none");
 }
 
-function s1_pop2() {
-	$('.s1_3').css("display","block");
-	$('.s1_c1ose1').css("display","block");
+function close1() {
+	$('.api').css("display","none");
+	$('.c1ose1').css("display","none");
+	$('.pop1').css("display","block");
 }
 
-function s1_pop3() {
-	$('.s1_4').css("display","block");
-	$('.s1_c1ose1').css("display","block");
+function pop2() {
+	$('.ref').css("display","block");
+	$('.close2').css("display","block");
+	$('.pop2').css("display","none");
 }
 
-function s1_pop4() {
-	$('.s1_5').css("display","block");
-	$('.s1_c1ose1').css("display","block");
+function close2() {
+	$('.ref').css("display","none");
+	$('.close2').css("display","none");
+	$('.pop2').css("display","block");
 }
 
-function s1_close1() {
-	$('.s1_2').css("display","none");
-	$('.s1_3').css("display","none");
-	$('.s1_4').css("display","none");
-	$('.s1_5').css("display","none");
-	$('.s1_c1ose1').css("display","none");
+
+$(document).on("touchstart",".homebtn" , function (event) {
+         open_page("",1);
+        });
+$(document).on("touchstart",".sumbtn" , function (event) {
+         open_page("",7);
+        });
+		
+		
+		
+function kol() {
+	$('video').css("display","block");
+	$('.closekol').css("display","block");
+	document.getElementById("myVideo").play();
+}
+
+function closekol() {
+	$('video').css("display","none");
+	$('.closekol').css("display","none");
+	var vid = document.getElementById("myVideo");
+	vid.pause();
+	vid.currentTime = 0;
 }
